@@ -14,7 +14,7 @@ class NewsBloc extends Bloc<NewsEvent, NewsState> {
       emit(NewsLoadingState());
 
       try {
-        var mData = await apiHelper.getApi(Urls.API_KEY);
+        var mData = await apiHelper.getApi(Urls.APPLE_API_KEY);
         var loadedData = NewsModel.fromJson(mData);
         emit(NewsLoadedState(loadedData: loadedData));
       } catch (e) {
