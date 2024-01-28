@@ -67,8 +67,10 @@ class _HomeScreenState extends State<HomeScreen> {
           });
         },
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.personal_injury), label: "Personal"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.business), label: "Business"),
         ],
       ),
     );
